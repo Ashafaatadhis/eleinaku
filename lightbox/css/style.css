@@ -1,0 +1,94 @@
+/* font */
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.woff2) format('woff2');
+}
+
+body {
+    font-size: 18px;
+    line-height: 36px;
+    font-family: 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background-color: #dddddd;
+}
+
+h1 {
+    margin: 50px 0;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    /* overflow: hidden; */
+    border: 5px solid #666666;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.gallery li span, .gallery li, .gallery img {
+    border-radius: 50%;
+}
+
+/* @keyframes blurProfil {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(30deg);
+    }
+
+    100% {
+        opacity:1;
+        transform: scale(1) rotate(360deg);
+    }
+} */
+
+/* @keyframes benerProfil {
+    100% {
+        opacity: 0;
+        transform: scale(0) rotate(30deg);
+    }
+
+    0% {
+        opacity:1;
+        transform: scale(1) rotate(360deg);
+    }
+} */
+
+
+.gallery li a span {
+    
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333333;
+    opacity: 0;
+    text-shadow: 1px 1px 1px #dddddd;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+}
+
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}   
+
+.clear {
+    clear: both;
+}

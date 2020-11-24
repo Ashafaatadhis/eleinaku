@@ -1,0 +1,10 @@
+.coba {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+   transition: 1s;
+}
+
+.coba:hover{
+    background-color: red;
+}
